@@ -1,0 +1,12 @@
+<h2>Welcome To Ryans Awesome Menues</h2>
+
+<%= form_for @menu do |f| %>
+<%= f.text_field :title %>
+<%= f.button "Create Menu" %>
+<% end %>
+
+<ul>
+<% @menus.each do |menu|%>
+ <%= render partial: "menu_item", locals: { menu: menu } %>
+<% end %>
+</ul>

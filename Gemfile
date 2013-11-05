@@ -16,6 +16,12 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
 
   gem 'uglifier', '>= 1.0.3'
 end
